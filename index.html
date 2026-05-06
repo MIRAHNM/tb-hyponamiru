@@ -542,31 +542,34 @@
     letter-spacing: 0.5px;
   }
 
-  /* ===================== VESTAVĚNÝ FORMULÁŘ ===================== */
-  .form-wrap {
-    max-width: 740px;
-    margin: 32px auto 0;
-    background: var(--cream);
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.25);
-  }
-  .form-wrap iframe {
-    display: block;
-    width: 100%;
-    background: var(--cream);
-  }
-  .form-fallback {
-    padding: 14px 20px 20px;
+  /* ===================== TLAČÍTKO REGISTRACE ===================== */
+  .form-cta-wrap {
+    margin-top: 32px;
     text-align: center;
-    font-size: 13px;
-    color: var(--muted);
-    background: var(--cream);
   }
-  .form-fallback a {
-    color: var(--green);
-    text-decoration: underline;
-    font-weight: 600;
+  .btn-primary-cta {
+    display: inline-block;
+    padding: 22px 56px;
+    background: var(--gold);
+    color: var(--ink) !important;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+  }
+  .btn-primary-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 36px rgba(201,168,124,0.5);
+    background: #d6b890;
+  }
+  .form-cta-note {
+    margin-top: 22px;
+    font-size: 13px;
+    color: rgba(253,251,247,0.65);
+    letter-spacing: 0.3px;
   }
 
   /* ===================== FAQ ===================== */
@@ -991,7 +994,7 @@
 <!-- ===================== REGISTRACE — VESTAVĚNÝ GOOGLE FORM ===================== -->
 <section class="cta-section" id="registrace">
   <div class="eyebrow" style="color: var(--gold);">Registrace</div>
-  <h2>Dáváš vědět, jestli jedeš</h2>
+  <h2>Dej vědět, jestli jedeš</h2>
   <p>
     Vyplň krátký dotazník přímo zde — stravovací preference, zájem o saunu, vířivku a večerní oheň.
     Zabere ti to 2 minuty a pomůže nám připravit všechno na míru.
@@ -999,21 +1002,11 @@
 
   <div class="deadline">Prosíme o vyplnění do <strong>15. 5. 2026</strong></div>
 
-  <div class="form-wrap">
-    <iframe
-      id="reg-form"
-      src="https://forms.cloud.microsoft/e/xVC8i3eN88?embed=true"
-      width="100%"
-      height="1400"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      title="Registrační dotazník — Teambuilding hyponamiru">
-      Načítání formuláře…
-    </iframe>
-    <p class="form-fallback">
-      Formulář se nenačítá? <a href="https://forms.cloud.microsoft/e/xVC8i3eN88" target="_blank">Otevři ho v novém okně →</a>
-    </p>
+  <div class="form-cta-wrap">
+    <a href="https://forms.cloud.microsoft/e/xVC8i3eN88" target="_blank" rel="noopener" class="btn btn-primary-cta">
+      📝 Vyplnit dotazník
+    </a>
+    <p class="form-cta-note">Otevře se Microsoft Forms v novém okně. Pro vyplnění se přihlas svým hyponamiru účtem.</p>
   </div>
 </section>
 
