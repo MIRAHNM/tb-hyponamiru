@@ -346,6 +346,38 @@
     font-size: 13px;
     border-radius: 4px;
   }
+  .menu-box {
+    margin-top: 22px;
+    background: #fff;
+    border: 1px solid #e8e2d6;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .menu-label {
+    padding: 14px 20px;
+    background: var(--green);
+    color: var(--cream);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  .menu-content {
+    padding: 18px 20px;
+  }
+  .menu-section {
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--ink);
+    line-height: 1.6;
+    border-bottom: 1px dashed #e8e2d6;
+  }
+  .menu-section:last-child {
+    border-bottom: none;
+  }
+  .menu-section strong {
+    color: var(--green);
+    margin-right: 8px;
+  }
   .variant-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -542,6 +574,38 @@
     letter-spacing: 0.5px;
   }
 
+  /* ===================== KARTY PRO ÚČASTNÍKY ===================== */
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 980px;
+    margin: 36px auto 0;
+  }
+  .info-card {
+    background: rgba(253,251,247,0.08);
+    border: 1px solid rgba(253,251,247,0.18);
+    border-radius: 12px;
+    padding: 24px 22px;
+    text-align: left;
+  }
+  .info-card-icon {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+  .info-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 6px;
+  }
+  .info-card-text {
+    font-size: 14px;
+    color: rgba(253,251,247,0.85);
+    line-height: 1.55;
+  }
+
   /* ===================== TLAČÍTKO REGISTRACE ===================== */
   .form-cta-wrap {
     margin-top: 32px;
@@ -663,7 +727,7 @@
     <li><a href="#doprava">Doprava</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
-  <a href="#registrace" class="nav-cta">Registrace</a>
+  <a href="#registrace" class="nav-cta">Pro účastníky</a>
 </nav>
 
 <!-- ===================== HERO ===================== -->
@@ -689,7 +753,7 @@
         <div class="value">11:00 / 10:00</div>
       </div>
     </div>
-    <a href="#registrace" class="btn">Registruj se</a>
+    <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SdUB1hwaQUy8Dd0CIqYLXwkLHU50AkdEqBTrZRU8QSRUMkNJNlo0MUEzQjc1NEgxTlJOVFpNNERQTS4u" target="_blank" rel="noopener" class="btn">🍽 Vyplnit obědy</a>
   </div>
 </header>
 
@@ -717,11 +781,11 @@
   </div>
 </section>
 
-<!-- ===================== DEADLINE BANNER ===================== -->
+<!-- ===================== INFO BANNER ===================== -->
 <div class="deadline-banner">
-  <span class="icon">📝</span>
-  <span class="text">Prosíme, vyplň <strong>registrační dotazník do 15. 5. 2026</strong>, ať můžeme vše připravit.</span>
-  <a href="#registrace">Vyplnit dotazník</a>
+  <span class="icon">🍽</span>
+  <span class="text"><strong>Vyber si obědy</strong> — 28 účastníků se nám sešlo. Pro Kolštejn a Šerák potřebujeme objednat jídlo dopředu, prosíme do <strong>31. 5. 2026</strong>.</span>
+  <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SdUB1hwaQUy8Dd0CIqYLXwkLHU50AkdEqBTrZRU8QSRUMkNJNlo0MUEzQjc1NEgxTlJOVFpNNERQTS4u" target="_blank" rel="noopener">Vyplnit objednávku obědů</a>
 </div>
 
 <!-- ===================== PROGRAM ===================== -->
@@ -730,7 +794,7 @@
     <div class="eyebrow">Program</div>
     <h2 class="section-title">Tři dny, jedno místo,<br>spousta zážitků</h2>
     <p class="section-lead">
-      Detailní program postupně doplníme — výlety a aktivity ladíme podle počasí a vašich preferencí z dotazníku.
+      Program akce — parta, jídlo, výlety a relax.
     </p>
 
     <!-- DEN 1 -->
@@ -743,19 +807,19 @@
         <div class="time">11:00</div>
         <div class="activity">
           <strong>Příjezd na místo</strong>
-          <div class="note">Ubytování v apartmánech, uvítání</div>
+          <div class="note">Ubytování v apartmánech NoNe, uvítání</div>
         </div>
 
         <div class="time">12:30</div>
         <div class="activity">
-          <strong>Procházka do Branné — Minipivovar Kolštejn</strong>
-          <div class="note">Společný oběd a pití v <a href="https://kolstejn.cz/minipivovar/" target="_blank" style="color: var(--green); text-decoration: underline;">minipivovaru Kolštejn</a></div>
+          <strong>Procházka do Branné — Oběd v Minipivovaru Kolštejn</strong>
+          <div class="note">Společný oběd a pití v <a href="https://kolstejn.cz" target="_blank" rel="noopener" style="color: var(--green); text-decoration: underline;">minipivovaru Kolštejn</a> (~5 min pěšky z apartmánů)</div>
         </div>
 
         <div class="time">15:30</div>
         <div class="activity">
           <strong>Prohlídka zámku Kolštejn</strong>
-          <div class="note">Komentovaná prohlídka jedné z dominant Branné</div>
+          <div class="note">Komentovaná prohlídka jedné z dominant Branné — <a href="https://www.zamekkolstejn.cz" target="_blank" rel="noopener" style="color: var(--green); text-decoration: underline;">zamekkolstejn.cz</a></div>
         </div>
 
         <div class="time">poté</div>
@@ -765,8 +829,8 @@
 
         <div class="time">od 18:00</div>
         <div class="activity">
-          <strong>Grilování u ohně</strong>
-          <div class="note">Večerní občerstvení & posezení</div>
+          <strong>🔥 Společné grilování — celý večer</strong>
+          <div class="note">Tým grilujeme společně na Weber Stealth (Mira přiveze), pípa od Lukáše. Marinované maso z Globusu. Plus pivo z bečky.</div>
         </div>
 
         <div class="time">celý večer</div>
@@ -775,8 +839,30 @@
           <div class="note">🔥 oheň · 🛋️ společenská místnost · 🧖 sauna · ♨️ vířivka · 🏓 ping pong</div>
         </div>
       </div>
-      <div class="day-note">
-        <em>Program se může v závislosti na okolnostech ještě upravit.</em>
+
+      <!-- Co bude na grilu -->
+      <div class="menu-box">
+        <div class="menu-label">🥩 Co bude na grilu (den 1) — připravujeme spolu</div>
+        <div class="menu-content">
+          <div class="menu-section">
+            <strong>Maso na gril</strong> · kuřecí steaky · krkovička · vepřová kotleta · šašlik (špíz) · klobásy
+          </div>
+          <div class="menu-section">
+            <strong>Sýry na gril</strong> · hermelín · haloumi (i pro masožravce)
+          </div>
+          <div class="menu-section">
+            <strong>Bezmasé / bezlaktózové</strong> · tofu · grilovaná zelenina (lilek, cuketa, paprika, žampiony)
+          </div>
+          <div class="menu-section">
+            <strong>K tomu</strong> · šopský salát · míchaný salát · zeleninová mísa k namáčení · pečivo · omáčky a dipy
+          </div>
+          <div class="menu-section">
+            <strong>K zobání celý večer</strong> · sýrová mísa · ovocná mísa
+          </div>
+          <div class="menu-section">
+            <strong>K pití</strong> · 🍺 točené pivo z bečky · víno · nealko
+          </div>
+        </div>
       </div>
     </div>
 
@@ -784,25 +870,48 @@
     <div class="day">
       <div class="day-header">
         <span class="day-date">Středa 17. 6.</span>
-        <span class="day-label">Den 2 · Společný výlet</span>
+        <span class="day-label">Den 2 · Výšlap na Šerák</span>
       </div>
       <div class="timeline">
         <div class="time">8:00 – 10:00</div>
-        <div class="activity"><strong>Snídaně</strong></div>
-
-        <div class="time">10:00</div>
         <div class="activity">
-          <strong>Vyrážíme na společný výlet</strong>
-          <div class="note">Aktuálně zvažujeme dvě varianty (viz níže) — finální výběr upřesníme</div>
+          <strong>Snídaně</strong>
+          <div class="note">V apartmánech — viz menu níže</div>
         </div>
 
-        <div class="time">cca 19:00</div>
-        <div class="activity"><strong>Návrat na místo</strong></div>
+        <div class="time">10:24</div>
+        <div class="activity">
+          <strong>🚆 Odjezd vlakem Branná → Ramzová</strong>
+          <div class="note">Sraz na nádraží Branná. Společný vlak na startovní bod výšlapu</div>
+        </div>
+
+        <div class="time">~11:00</div>
+        <div class="activity">
+          <strong>🥾 Začátek pochodu z Ramzové</strong>
+          <div class="note">Cca 2 hodiny pěšky na <a href="https://chatanaseraku.cz" target="_blank" rel="noopener" style="color: var(--green); text-decoration: underline;">Chatu na Šeráku</a> (1 351 m n. m.) — <a href="https://mapy.com/s/domolezata" target="_blank" rel="noopener" style="color: var(--green); text-decoration: underline;">trasa na mapy.cz</a></div>
+        </div>
+
+        <div class="time">~13:00</div>
+        <div class="activity">
+          <strong>🍽 Oběd na Chatě na Šeráku</strong>
+          <div class="note">Připravený oběd a občerstvení nahoře na chatě</div>
+        </div>
+
+        <div class="time">odpoledne</div>
+        <div class="activity">
+          <strong>Sestup zpět na Ramzovou</strong>
+          <div class="note">Stejnou cestou pěšky dolů na vlak</div>
+        </div>
+
+        <div class="time">~17:00 – 18:00</div>
+        <div class="activity">
+          <strong>🚆 Vlak zpět do Branné, návrat na ubytování</strong>
+        </div>
 
         <div class="time">od 19:00</div>
         <div class="activity">
-          <strong>Večerní zábava u ohně</strong>
-          <div class="note">Občerstvení & posezení pod hvězdami</div>
+          <strong>🍖 Společné grilování & opékání u ohně</strong>
+          <div class="note">Po výletě jdeme opět ke grilu — žebra, klobásy, tatarák, sýry a něco bezmasého. Vaříme spolu.</div>
         </div>
 
         <div class="time">celý večer</div>
@@ -812,41 +921,33 @@
         </div>
       </div>
 
-      <!-- Dvě varianty výletu -->
-      <div class="variant-grid">
-        <div class="variant">
-          <div class="variant-tag">Varianta A</div>
-          <h4>🥾 Šerák pěšky</h4>
-          <p class="variant-desc">
-            Klasický společný výšlap z <strong>Ramzové</strong> na vrchol <strong>Šerák</strong> (1 351 m n. m.).
-            Krásné výhledy, lesní cesty, zastávka na Jiřího chatě.
-          </p>
-          <ul class="variant-meta">
-            <li><strong>Trvání:</strong> celý den, cca 5–6 h v pohybu</li>
-            <li><strong>Náročnost:</strong> středně náročné, cca 12 km</li>
-            <li><strong>Co s sebou:</strong> turistická obuv, voda, svačina</li>
-            <li><strong>Cena:</strong> zdarma (případně lanovka Ramzová)</li>
-          </ul>
-        </div>
-
-        <div class="variant">
-          <div class="variant-tag">Varianta B</div>
-          <h4>🎢 Dolní Morava</h4>
-          <p class="variant-desc">
-            Resort s mnoha atrakcemi pro každého — <strong>Stezka v oblacích</strong>, Mamutíkův vodní park,
-            <strong>bobová dráha</strong>, lanový park, sedačka na Slamník.
-          </p>
-          <ul class="variant-meta">
-            <li><strong>Trvání:</strong> celý den, atrakce dle výběru</li>
-            <li><strong>Náročnost:</strong> nízká, lze přizpůsobit každému</li>
-            <li><strong>Co s sebou:</strong> sportovní oděv, plavky (vodní park)</li>
-            <li><strong>Cena:</strong> dle výběru atrakcí (vstupy)</li>
-          </ul>
+      <!-- Co bude na grilu den 2 -->
+      <div class="menu-box">
+        <div class="menu-label">🥩 Co bude na grilu (den 2 večer) — připravujeme spolu</div>
+        <div class="menu-content">
+          <div class="menu-section">
+            <strong>Maso na gril</strong> · vepřová žebra · kuřecí stehna · klobásy · tatarský biftek s topinkami
+          </div>
+          <div class="menu-section">
+            <strong>Sýry na gril</strong> · hermelín · haloumi · sýrový špíz (uděláme sami)
+          </div>
+          <div class="menu-section">
+            <strong>Bezmasé / bezlaktózové</strong> · tofu · grilovaná zelenina
+          </div>
+          <div class="menu-section">
+            <strong>Bezmasé mísy</strong> · sýrová mísa · ovocná mísa
+          </div>
+          <div class="menu-section">
+            <strong>Saláty a přílohy</strong> · šopský salát · zeleninová mísa s dipem · pečivo · omáčky
+          </div>
+          <div class="menu-section">
+            <strong>K pití</strong> · 🍺 točené pivo z bečky · víno · nealko
+          </div>
         </div>
       </div>
 
       <div class="day-note">
-        <em>Finální výběr výletu upřesníme později podle počasí a preferencí účastníků z dotazníku.</em>
+        <em>💡 Co s sebou na výlet: turistická obuv, voda, vrstvy oblečení (může být chladněji), případně pláštěnka. Lehčí svačinu si můžeš vzít, plný oběd je nachystaný na chatě.</em>
       </div>
     </div>
 
@@ -858,12 +959,37 @@
       </div>
       <div class="timeline">
         <div class="time">8:00 – 10:00</div>
-        <div class="activity"><strong>Snídaně</strong></div>
+        <div class="activity">
+          <strong>Snídaně</strong>
+          <div class="note">Viz menu níže — stejné jako den 2</div>
+        </div>
 
         <div class="time">10:00</div>
         <div class="activity">
           <strong>Check-out</strong>
-          <div class="note">Odjezd domů</div>
+          <div class="note">Odjezd domů, šťastnou cestu</div>
+        </div>
+      </div>
+
+      <!-- Co bude na snídani -->
+      <div class="menu-box">
+        <div class="menu-label">🍳 Snídaně — co najdeš na stole (oba dny)</div>
+        <div class="menu-content">
+          <div class="menu-section">
+            <strong>Teplé</strong> · párky · míchaná vejce
+          </div>
+          <div class="menu-section">
+            <strong>Studené</strong> · šunka · sýr eidam · zelenina (okurek, rajče, paprika)
+          </div>
+          <div class="menu-section">
+            <strong>Sladké</strong> · bílý jogurt · müsli
+          </div>
+          <div class="menu-section">
+            <strong>Pečivo a doplňky</strong> · chléb · rohlíky · kečup · hořčice
+          </div>
+          <div class="menu-section">
+            <em>Vegetariáni a host bez laktózy — alternativy zajištěné.</em>
+          </div>
         </div>
       </div>
     </div>
@@ -991,22 +1117,58 @@
   </div>
 </section>
 
-<!-- ===================== REGISTRACE — VESTAVĚNÝ GOOGLE FORM ===================== -->
+<!-- ===================== PRO ÚČASTNÍKY ===================== -->
 <section class="cta-section" id="registrace">
-  <div class="eyebrow" style="color: var(--gold);">Registrace</div>
-  <h2>Dej vědět, jestli jedeš</h2>
+  <div class="eyebrow" style="color: var(--gold);">Pro účastníky</div>
+  <h2>Vidíme se za chvíli! 🎉</h2>
   <p>
-    Vyplň krátký dotazník přímo zde — stravovací preference, zájem o saunu, vířivku a večerní oheň.
-    Zabere ti to 2 minuty a pomůže nám připravit všechno na míru.
+    Registrace ukončena, máme <strong>28 účastníků</strong>. Děkujeme všem!
+    Ještě potřebujeme od vás <strong>vybrat obědy</strong> — formulář najdete v banneru nahoře. Prosíme do <strong>31. 5. 2026</strong>.
   </p>
 
-  <div class="deadline">Prosíme o vyplnění do <strong>15. 5. 2026</strong></div>
-
   <div class="form-cta-wrap">
-    <a href="https://forms.cloud.microsoft/e/xVC8i3eN88" target="_blank" rel="noopener" class="btn btn-primary-cta">
-      📝 Vyplnit dotazník
+    <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SdUB1hwaQUy8Dd0CIqYLXwkLHU50AkdEqBTrZRU8QSRUMkNJNlo0MUEzQjc1NEgxTlJOVFpNNERQTS4u" target="_blank" rel="noopener" class="btn btn-primary-cta">
+      🍽 Vyplnit objednávku obědů
     </a>
     <p class="form-cta-note">Otevře se Microsoft Forms v novém okně. Pro vyplnění se přihlas svým hyponamiru účtem.</p>
+  </div>
+
+  <div class="info-grid">
+    <div class="info-card">
+      <div class="info-card-icon">🔥</div>
+      <div class="info-card-title">Grilování společně</div>
+      <div class="info-card-text">Oba večery grilujeme spolu na Weber Stealth — tým buduje tým u grilu.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-icon">🍺</div>
+      <div class="info-card-title">Pivo z bečky</div>
+      <div class="info-card-text">Pípa od Lukáše + 2× bečka. Plus víno, tvrdý, nealko a káva.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-icon">🚐</div>
+      <div class="info-card-title">Doprava</div>
+      <div class="info-card-text">Rozpis spolujízdy rozešleme týden před akcí — kapacita aut postačuje.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-icon">🐕</div>
+      <div class="info-card-title">Pes Daisy vítán</div>
+      <div class="info-card-text">Vojtěch může vzít psa Daisy. Apartmány NoNe to umožňují.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-icon">🥗</div>
+      <div class="info-card-title">Stravování</div>
+      <div class="info-card-text">3 vegetariáni + 1 bezlaktózový. Alternativy zajištěné v každém menu.</div>
+    </div>
+    <div class="info-card">
+      <div class="info-card-icon">🥾</div>
+      <div class="info-card-title">Výlet Šerák</div>
+      <div class="info-card-text">Vlakem v 10:24 z Branné na Ramzovou, pak ~2 h pěšky nahoru, oběd na chatě.</div>
+    </div>
+    <div class="info-card" style="border-color: var(--gold); background: rgba(201,168,124,0.15);">
+      <div class="info-card-icon">🧥</div>
+      <div class="info-card-title" style="color: var(--gold);">Teplé oblečení!</div>
+      <div class="info-card-text"><strong>Vezměte si opravdu teplé věci na večery</strong> — v Jeseníkách v červnu klesají večerní teploty klidně ke 10 °C. Bunda, mikina, dlouhé kalhoty.</div>
+    </div>
   </div>
 </section>
 
@@ -1018,7 +1180,10 @@
   <details class="faq-item">
     <summary class="faq-q">Co si mám vzít s sebou?</summary>
     <div class="faq-a">
-      Pohodlné oblečení a obuv na výlety, plavky (sauna a vířivka), případně teplejší vrstvu na večery v horách.
+      <strong>⚠️ DŮLEŽITÉ: Vezměte si opravdu teplé oblečení na večery!</strong> Jsme v Jeseníkách, i v červnu mohou být večerní teploty kolem 10 °C — bunda, mikina, dlouhé kalhoty.
+      <br><br>
+      Dále pohodlné oblečení a turistická obuv na výlet, plavky (sauna a vířivka), pláštěnka pro případ deště.
+      <br><br>
       Ručníky a ložní prádlo jsou v apartmánech k dispozici.
     </div>
   </details>
@@ -1026,14 +1191,31 @@
   <details class="faq-item">
     <summary class="faq-q">Jak je to s jídlem?</summary>
     <div class="faq-a">
-      Snídaně, obědy a večeře zajistíme společně. V dotazníku, prosím, uveď stravovací preference (s masem / bez masa / vegan / bezlepkové) a případné alergie.
+      <strong>Snídaně</strong> jsou zajištěné cateringem — bohatý raut s párky, vejci, šunkou, sýrem, jogurtem, müsli, pečivem.
+      <br><br>
+      <strong>Obědy</strong> v restauraci v Kolštejně (den 1) a na Chatě Jiřího (den 2) — vybíráš si přes
+      <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=SdUB1hwaQUy8Dd0CIqYLXwkLHU50AkdEqBTrZRU8QSRUMkNJNlo0MUEzQjc1NEgxTlJOVFpNNERQTS4u" target="_blank" rel="noopener" style="color: var(--green); font-weight: 600;">objednávkový formulář</a>
+      do 31. 5. 2026.
+      <br><br>
+      <strong>Večeře</strong> grilujeme spolu — Weber Stealth, marinované maso z Globusu, sýry, saláty, něco bezmasého.
+      <br><br>
+      Vegetariáni i host bez laktózy mají alternativy v každém menu.
+    </div>
+  </details>
+
+  <details class="faq-item">
+    <summary class="faq-q">Jak se dostanu na výlet na Šerák?</summary>
+    <div class="faq-a">
+      Společně vlakem z nádraží Branná v 10:24. Vystupujeme v Ramzové a pěšky cca 2 hodiny
+      na Chatu na Šeráku (oběd nahoře). Zpět stejnou cestou, návrat na ubytování mezi 17:00–18:00.
     </div>
   </details>
 
   <details class="faq-item">
     <summary class="faq-q">Co když přijedu později nebo odjedu dříve?</summary>
     <div class="faq-a">
-      Žádný problém. Uveď to prosím v dotazníku, ať s tebou počítáme správně u jídla a výletů.
+      Nestandardní termíny jsou už domluvené přímo s pořadateli. Pokud si nejsi jistý/á svým plánem,
+      ozvi se Mírovi přímo.
     </div>
   </details>
 
